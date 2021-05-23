@@ -12,6 +12,9 @@
 - [eCSStractor](https://marketplace.visualstudio.com/items?itemName=diz.ecsstractor-port)
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
+## Ссылка на макет (для доп практики)
+- [Макет](https://www.figma.com/file/MW3GzAiLwRCSgmIUxAJ2Da/Templates-%236.-More-on-Figma.info-(Copy)?node-id=0%3A1)
+
 ## Настройки для Bracket Pair Colorizer
 
 ```
