@@ -1,0 +1,232 @@
+:root {
+    --text-font: 'Roboto', sans-serif;
+    --text-font-logo: 'Raleway', sans-serif;
+    --accent-color: #2196f3;
+    --hero-color: #2f303a;
+    --sign-link: #ffffff;
+    --text-color: #212121;
+    --text-colorit: #757575;
+    --text-footer: #ffffff99;
+    --button-color: #f5f4fa;
+}
+
+/* Глобальные стили */
+
+body {
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+/* Header */
+
+.header {
+}
+.container {
+}
+.navigation {
+}
+.nav-list {
+}
+.nav-item {
+}
+.link {
+}
+
+.contact-link {
+    color: var(--text-colorit);
+}
+
+.logotype {
+    font-family: var(--text-font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.173;
+
+    letter-spacing: 0.03em;
+    color: var(--hero-color);
+}
+.logotype-span {
+    color: var(--accent-color);
+}
+.navigation {
+    font-family: var(--text-font);
+    font-weight: 500;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+}
+.navigation a:hover,
+.navigation a:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.nav-list {
+    font-family: var(--text-font);
+
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+}
+
+.hero {
+    font-family: var(--hero-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--hero-color);
+    color: var(--button-color);
+}
+
+.name {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.sign-link {
+    font-weight: 500;
+
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    padding: 10px 32px;
+}
+.sign-link {
+    color: var(--sign-link);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px;
+}
+
+.privi-lege {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 1.142;
+
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.idea {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-colorit);
+}
+.project {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color);
+}
+.team {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color);
+}
+.initials {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.adress-oficce {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--sign-link);
+}
+.basement {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+
+    background: var(--hero-color);
+}
+.adress-info {
+    font-family: var(--text-font-logo);
+
+    line-height: 1.714;
+
+    color: var(--text-footer);
+}
+.button-type {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    color: var(--button-color);
+}
+.button-type :hover,
+.button-type :focus {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+.name-product {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+}
+.design-product {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.666;
+    letter-spacing: 0.03em;
+    color: var(--text-colorit);
+}
