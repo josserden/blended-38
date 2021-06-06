@@ -1,12 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    /* *Объявляем счетчик */
+    counter-reset: count-number 100;
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: #0074d9;
+}
+
+.container {
+    width: 1200px;
+
+    /* height: 20px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid grey;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: rgb(105, 175, 255);
+
+    outline: 10px solid grey;
 }
 
 .underline {
@@ -25,4 +46,108 @@ a {
     height: 2px;
     background-color: #0074d9;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.underline:hover::before {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* .number { */
+/* width: 50px;
+    height: 50px;
+
+    border: 2px solid red; */
+/* margin: 20px; */
+/* } */
+
+/* .number:not(:last-child) {
+    margin-right: 20px;
+     margin-bottom: 20px;
+} */
+
+/* ol {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* *Альтернатива  */
+
+/* .number + .number {
+    margin-top: 20px;
+    margin-left: 20px;
+} */
+
+ol {
+    list-style: none;
+}
+
+/* *CSS COUNTER */
+
+.number {
+    position: relative;
+    /* *Инициализация счетчика */
+    counter-increment: count-number 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+
+.number::before {
+    display: block;
+
+    content: counter(count-number);
+    color: #0074d9;
+
+    width: 43px;
+    height: 67px;
+    opacity: 0.1;
+    color: red;
+
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* *Float */
+
+.wrapper {
+    max-width: 480px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 15px 20px 25px;
+}
+
+.box {
+    float: left;
+
+    margin: 30px;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+
+    background-color: orangered;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.box2 {
+    float: right;
+
+    margin: 30px;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+
+    background-color: orangered;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+p {
+    text-align: justify;
 }
