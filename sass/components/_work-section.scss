@@ -1,0 +1,41 @@
+.s3 {
+  padding-top: 0;
+}
+
+.section-heading {
+  color: var(--black);
+  font-size: 36px;
+  line-height: 1.166;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.work-type-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  &__item {
+    display: inline-block;
+    position: relative;
+  }
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__description-div {
+    background-color: #2f303acc;
+    margin: 0;
+    position: absolute;
+    width: 370px;
+    bottom: 3px;
+  }
+  &__description-text {
+    font-size: 14px;
+    line-height: 1.172;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 27px 0;
+    margin: 0;
+  }
+}

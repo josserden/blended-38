@@ -1,0 +1,133 @@
+.footer {
+  background-color: #2f303a;
+  font-size: 14px;
+  line-height: 1.714;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .container {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .logo {
+    color: var(--white);
+    display: block;
+    margin-bottom: 20px;
+  }
+  .contact-list {
+    margin: 0;
+    display: block;
+  }
+  .contact-list__link {
+    color: var(--footer-contacts);
+  }
+  .social-list {
+    display: flex;
+    margin-left: 70px;
+    padding: 0;
+    margin-top: 0;
+    li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .social-list__svg {
+    fill: var(--white);
+  }
+}
+
+.contact-list__link {
+  &:focus,
+  &:hover {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--accent-color);
+  }
+}
+.social-list {
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer .contact-list li {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address {
+  color: var(--white);
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.align-title {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.follow {
+  margin-left: 93px;
+  &__title {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.143;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__input-email {
+    display: inline-block;
+    background-color: inherit;
+    border-radius: 4px;
+    width: 358px;
+    border: 1px solid #ffffff4d;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 15px 16px;
+    color: #ffffff99;
+  }
+  &__submit-button {
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    align-items: center;
+    padding: 10px 29px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    border: none;
+    margin-left: 12px;
+    color: var(--white);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+    margin-left: 10px;
+  }
+}
+
+.follow__input-email {
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #ffffff99;
+  }
+}
+
+.follow__submit-button {
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}

@@ -1,0 +1,72 @@
+.s4 {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .social-list {
+    .social-list__item {
+      margin-right: 0;
+    }
+  }
+}
+
+.team-tile {
+  background-color: var(--white);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 270px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 2px 1px #00000040;
+  &__text-area {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  &__teammate-name {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 1.1875;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.social-list {
+  display: flex;
+  padding: 0 32px 30px;
+  justify-content: space-between;
+  &__item {
+    .social-list__link {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      fill: var(--tm-social-clients);
+      background-color: #ffffff1a;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus,
+      &:hover {
+        fill: var(--white);
+        background-color: var(--accent-color);
+      }
+    }
+  }
+  &__svg {
+    height: 20px;
+    width: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
