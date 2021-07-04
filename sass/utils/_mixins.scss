@@ -1,3 +1,30 @@
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-parent() {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    // margin: -15px;
+}
+
+@mixin grid-child-tab() {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+    // margin: 15px;
+
+    outline: 2px solid tomato;
+}
+
+@mixin grid-child-pc() {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+}
+
 @mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false, $ls: false) {
     @if $size {
         font-size: $size;
@@ -16,7 +43,7 @@
     }
 
     @if $ls {
-        line-height: $ls;
+        letter-spacing: $ls;
     }
 }
 
@@ -32,13 +59,4 @@
     @if $ls {
         letter-spacing: $ls;
     }
-}
-
-@media screen and (min-width: 480px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
 }
