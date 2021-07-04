@@ -290,14 +290,39 @@ summary {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 2px solid tomato;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -670,12 +695,25 @@ summary {
 }
 
 .s1-hero {
-  background: linear-gradient(45deg, rgba(116, 117, 122, 0.4), rgba(47, 48, 58, 0.4)), url(../images/h-back.jpg);
-  background-size: 1600px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background: linear-gradient(45deg, rgba(116, 117, 122, 0.4), rgba(47, 48, 58, 0.4)), url(../images/h-back.jpg);
+  width: 480px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .s1-hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .s1-hero {
+    width: 1200px;
+  }
 }
 
 .s1-hero__heading {

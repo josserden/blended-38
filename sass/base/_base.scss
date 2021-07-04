@@ -1,23 +1,41 @@
 .body {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  color: var(--main-font-color);
-  letter-spacing: 0.03em;
-  margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    @include font-source(normal, var(--main-font-color), 0.03em);
+
+    margin: 0 auto;
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    // width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    outline: 2px solid tomato;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .list {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
