@@ -1,4 +1,7 @@
 .s1-hero {
+    max-width: 1600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background: {
         size: cover;
         repeat: no-repeat;
@@ -7,19 +10,14 @@
     background: linear-gradient(45deg, rgba(116, 117, 122, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/h-back.jpg);
 
-    width: 480px;
-    height: 400px;
-    margin: 0 auto;
-
     @media screen and (min-width: 768px) {
-        width: 768px;
+        // width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
-    // padding-top: 200px;
-    // padding-bottom: 200px;
 
     &__heading {
         color: var(--white);
