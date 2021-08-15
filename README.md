@@ -9,5 +9,5 @@
 |                               JavaScript                               |
 | :--------------------------------------------------------------------: |
 | [Занятие 1](https://github.com/josserden/blended-38/tree/js-lesson-01) |
-|                             [Занятие 2]()                              |
+| [Занятие 2](https://github.com/josserden/blended-38/tree/js-lesson-2)  |
 |                                                                        |
